@@ -15,18 +15,13 @@
         "link":"/proyectos"
     },
     {
-        "id":4,
-        "name":"Cursos",
-        "link":"/cursos"
-    },
-    {
         "id":5,
         "name":"Contactame",
         "link":"/contactame"
     },
     {
         "id":6,
-        "name":"Quién soy?",
+        "name":"¿Quién soy?",
         "link":"/quien-soy"
     }
 ]

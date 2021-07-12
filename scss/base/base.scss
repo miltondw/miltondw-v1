@@ -1,0 +1,30 @@
+#__next{
+    display: grid;
+}
+
+ul {
+    @include reset-list;
+}
+
+*::selection {
+    background-color: $background-color;
+    color: $text-color
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+
+    @include laptop {
+        padding-top: 3em;
+    }
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+.main{
+    background: blue;
+}

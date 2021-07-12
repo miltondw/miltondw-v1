@@ -1,0 +1,14 @@
+//Config
+@import "./config/colors";
+@import "./config/fonts";
+//Mixins
+@import "./mixins/breakpoints.scss";
+@import "./mixins/resets";
+//Base
+@import "./base/normalize";
+@import "./base/base";
+//Block
+@import "./blocks/toggle-menu";
+@import "../components/Navbar/Navbar";
+@import "../components/Footer/Footer";
+

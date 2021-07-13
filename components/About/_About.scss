@@ -1,0 +1,16 @@
+.about{
+    display: grid;
+    &-content {
+        max-width: 300px;
+        margin: auto;
+        &__paragraph {
+            &:first-child{
+                text-align: center;
+                border: none;
+            }
+            padding: .5em;
+            border-left: 1px solid;
+        }
+    }
+    
+}

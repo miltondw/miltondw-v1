@@ -12,6 +12,7 @@ export default function Services() {
           description={s.description}
         />
       ))}
+      
     </div>
   );
 }

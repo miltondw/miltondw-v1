@@ -1,0 +1,45 @@
+.contact {
+    display: grid;
+    padding: 0em 2em 2em 2em;
+
+    .contact-content {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        &__item {
+            display: flex;
+            margin: 1em;
+            font-size: 22px;
+
+            &:last-child {
+                grid-column: 1/-1;
+
+                i {
+                    font-size: 45px;
+                    align-self: center;
+                }
+            }
+
+            i {
+                font-size: 35px;
+                align-self: center;
+            }
+
+            a {
+                margin-left: .5em;
+            }
+        }
+
+        &__address {
+            display: flex;
+            align-items: center;
+            margin-left: 1em;
+
+            p {
+                margin-left: 0.6em;
+            }
+        }
+    }
+
+}

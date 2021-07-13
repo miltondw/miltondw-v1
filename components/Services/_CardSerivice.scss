@@ -1,0 +1,37 @@
+.card-services {
+    background: #fafafa;
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 1px 0px 2px 0px;
+    margin-bottom: 2em;
+
+    &__title,
+    &__description {
+        text-align: center;
+    }
+
+    &__btn {
+        
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: #2c74cd;
+        font-weight: bold;
+        
+        border-bottom: 2px solid;
+        border-width: 50%;
+        margin-left: .3em;
+        padding-bottom: .1em;
+    }
+}
+
+.services {
+    display: grid;
+}

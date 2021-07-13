@@ -1,6 +1,7 @@
 import Layaut from "../components/Template/Layaut";
 import Head from "next/head";
 import Home from "../components/Home/Home";
+import Services from "../components/Services/Services";
 export default function App() {
   return (
     <Layaut>
@@ -8,6 +9,7 @@ export default function App() {
         <title>Desarrollo Web</title>
       </Head>
       <Home />
+      <Services />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, sint
         quibusdam, suscipit quos nemo voluptatum repellat praesentium sed vitae

@@ -1,4 +1,4 @@
-#__next{
+#__next {
     display: grid;
 }
 
@@ -25,10 +25,19 @@ ul {
         text-transform: uppercase;
     }
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-.main{
-    background: blue;
+
+// .main{
+//     background: blue;
+// }
+.Title {
+    font-size: 32px;
+    border-bottom: 2px solid #008380;
+    width: fit-content;
+    justify-self: center;
+    color: #0436ea;
 }

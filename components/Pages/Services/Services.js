@@ -10,6 +10,7 @@ export default function Services() {
           src={s.src}
           title={s.title}
           description={s.description}
+          link={s.link}
         />
       ))}
       

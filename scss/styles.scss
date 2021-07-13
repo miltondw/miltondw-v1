@@ -10,9 +10,13 @@
 //Block
 @import "./blocks/toggle-menu";
 //Components
+    // Molecules
 @import "../components/Navbar/Navbar";
 @import "../components/Footer/Footer";
-@import "../components/Home/Home";
-@import "../components/Services/CardSerivice";
-@import "../components/About/About";
+    //Pages
+@import "../components/pages/Home/Home";
+@import "../components/pages/Services/CardSerivice";
+@import "../components/pages/About/About";
+    // Atoms
+@import "../components/Btn/Btn";
 

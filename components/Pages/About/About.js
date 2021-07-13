@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Btn from "../../Btn/Btn";
 export default function About() {
   return (
     <div className="about">
@@ -29,6 +30,7 @@ export default function About() {
           que he podido ayudar desde la creación de nuevos productos hasta la
           creación de software que se adaptan a sus necesidades
         </p>
+        <Btn title="Conóceme Más" link="/conoceme"/>
       </div>
     </div>
   );

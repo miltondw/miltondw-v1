@@ -1,0 +1,16 @@
+.card-services {
+    background: #fafafa;
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 1px 0px 2px 0px;
+    margin-bottom: 2em;
+    &__title,
+    &__description {
+        text-align: center;
+    }
+}
+.services {
+    display: grid;
+}

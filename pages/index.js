@@ -1,8 +1,9 @@
-import Layaut from "../components/Template/Layaut";
 import Head from "next/head";
-import Home from "../components/Home/Home";
-import Services from "../components/Services/Services";
-import About from "../components/About/About";
+import Layaut from "../components/Template/Layaut";
+// Pages
+import Home from "../components/pages/Home/Home";
+import Services from "../components/pages/Services/Services";
+import About from "../components/pages/About/About";
 export default function App() {
   return (
     <Layaut>

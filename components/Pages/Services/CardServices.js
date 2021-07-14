@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Btn from "../../Btn/Btn";
-export default function CardServices({ src, title, description, link }) {
+export default function CardServices({ src, title, description, link,referencia }) {
   return (
-    <div className="card-services">
+    <div className="card-services" ref={referencia}>
       <Image
         layout="responsive"
         src={src}

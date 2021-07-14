@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="contact">
+    <div id="contactame" className="contact">
       <h2 className="Title">Contactame</h2>
       <div className="contact-content">
         <div className="contact-content__item">

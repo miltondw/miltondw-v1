@@ -7,21 +7,16 @@
     {
         "id":2,
         "name":"Servicios",
-        "link":"/servicios"
-    },
-    {
-        "id":3,
-        "name":"Proyectos",
-        "link":"/proyectos"
+        "link":"#servicios"
     },
     {
         "id":5,
         "name":"Contactame",
-        "link":"/contactame"
+        "link":"#contactame"
     },
     {
         "id":6,
         "name":"¿Quién soy?",
-        "link":"/quien-soy"
+        "link":"#quien-soy"
     }
 ]

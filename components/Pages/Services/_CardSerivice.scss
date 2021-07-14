@@ -6,11 +6,31 @@
     padding: 1em;
     box-shadow: 1px 0px 2px 0px;
     margin-bottom: 2em;
+
+    @include tablet {
+        max-width: 260px;
+        position: relative;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+
+    }
+
     &__title,
     &__description {
         text-align: center;
     }
 }
+
 .services {
     display: grid;
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+
+        h2 {
+            grid-column: 1/-1;
+        }
+    }
 }

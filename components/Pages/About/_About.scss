@@ -1,16 +1,46 @@
-.about{
+.about {
     display: grid;
+
     &-content {
         max-width: 340px;
         margin: auto;
-        &__paragraph {
-            &:first-child{
-                text-align: center;
-                border: none;
+
+        @include tablet {
+            max-width: 600px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .Btn {
+                grid-column: 1/-1;
+                justify-self: center;
+                margin: 1em;
             }
+        }
+
+        &__text {
+            text-align: center;
+
+            @include tablet {
+                grid-column: 1/-1;
+                width: 50%;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+
+        &__paragraph {
+
             padding: .5em;
-            border-left: 1px solid;
+            border-left: 2px solid #ccc;
         }
     }
-    
+
+
+    @include tablet {
+        &-paragraph__content {
+            margin-left: 1em;
+        }
+    }
+
+
 }

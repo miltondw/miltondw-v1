@@ -9,6 +9,10 @@
           grid-template-columns: 70% 20%;
           max-width: 340px;
           margin: auto;
+
+          @include tablet {
+               max-width: 600px;
+          }
      }
 
      &-redes {
@@ -22,6 +26,9 @@
      &-copy {
           grid-column: 1/-1;
           display: grid;
+          @include tablet{
+               text-align: center;
+          }
 
           ul {
                h4 {

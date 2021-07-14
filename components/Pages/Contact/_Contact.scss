@@ -1,45 +1,40 @@
 .contact {
     display: grid;
-    padding: 0em 2em 2em 2em;
 
-    .contact-content {
+    &-content {
         display: grid;
 
-        grid-template-columns: repeat(2, 1fr);
+        a {
+            margin-left: .3em;
+        }
 
         &__item {
-            display: flex;
-            margin: 1em;
-            font-size: 22px;
+            text-align: center;
+            margin-bottom: 1em;
 
             &:last-child {
-                grid-column: 1/-1;
+                display: grid;
+                grid-template-columns: 20% 80%;
+                width: 100%;
+                margin: auto;
 
                 i {
-                    font-size: 45px;
                     align-self: center;
+                    font-size: 24px;
                 }
-            }
-
-            i {
-                font-size: 35px;
-                align-self: center;
-            }
-
-            a {
-                margin-left: .5em;
             }
         }
 
         &__address {
             display: flex;
-            align-items: center;
-            margin-left: 1em;
+
+            h3 {
+                align-self: center;
+            }
 
             p {
-                margin-left: 0.6em;
+                margin-left: .2em;
             }
         }
     }
-
 }

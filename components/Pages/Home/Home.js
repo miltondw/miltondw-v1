@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className="home-redes">
         {Redes.map((r) => (
-          <a key={r.id} href={r.link}>
+          <a title={r.title} key={r.id} href={r.link}>
             <i className={`fab fa-${r.title}`}></i>
           </a>
         ))}

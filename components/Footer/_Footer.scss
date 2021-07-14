@@ -1,4 +1,41 @@
-.footer{
-     background: green;
-     bottom: 0;
+.footer {
+     background: #eee;
+     margin-top: 2em;
+
+     &-content {
+          bottom: 0;
+          background: inherit;
+          display: grid;
+          grid-template-columns: 70% 20%;
+          max-width: 340px;
+          margin: auto;
+     }
+
+     &-redes {
+          display: grid;
+          align-items: end;
+          justify-items: center;
+          font-size: 35px;
+          color: #2c74cd;
+     }
+
+     &-copy {
+          grid-column: 1/-1;
+          display: grid;
+
+          ul {
+               h4 {
+                    text-align: center;
+               }
+
+               li {
+                    margin-bottom: .5em;
+               }
+          }
+
+          &__paragraph {
+               text-align: center;
+               font-weight: bold;
+          }
+     }
 }

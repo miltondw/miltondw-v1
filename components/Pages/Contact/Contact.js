@@ -5,11 +5,15 @@ export default function Contact() {
       <div className="contact-content">
         <div className="contact-content__item">
           <i className="fab fa-whatsapp"></i>
-          <a href="tel:+573229444460">+573229444460</a>
+          <a title="+573229444460" href="tel:+573229444460">+573229444460</a>
         </div>
         <div className="contact-content__item">
           <i className="fas fa-envelope-open-text"></i>
-          <a href="mailto:estradamilton2001@gmail.com" target="_self">
+          <a
+            title={"estradamilton2001@gmail.com"}
+            href="mailto:estradamilton2001@gmail.com"
+            target="_self"
+          >
             estradamilton2001@gmail.com
           </a>
         </div>

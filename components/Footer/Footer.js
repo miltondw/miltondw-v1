@@ -1,5 +1,5 @@
 import Contac from "../Pages/Contact/Contact";
-import Redes from "../Pages/Home/redes.json";
+import Redes from "../../db/redes.json";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -7,7 +7,13 @@ export default function Footer() {
         <Contac />
         <div className="footer-redes">
           {Redes.map((r) => (
-            <a key={r.id} href={r.link} title={r.title}>
+            <a
+              key={r.id}
+              href={r.link}
+              title={r.title}
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className={`fab fa-${r.title}`}></i>
             </a>
           ))}

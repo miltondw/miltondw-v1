@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import Items from "./Items.json";
+import Items from "../../db/items-menu.json";
 import { useRouter } from "next/router";
 export default function Navbar() {
   const router = useRouter();

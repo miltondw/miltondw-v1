@@ -13,6 +13,11 @@
           @include tablet {
                max-width: 600px;
           }
+
+          @include laptop {
+               max-width: 1100px;
+               grid-template-columns: 70% 30%;
+          }
      }
 
      &-redes {
@@ -21,16 +26,31 @@
           justify-items: center;
           font-size: 35px;
           color: #2c74cd;
+
+          @include laptop {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
      }
 
      &-copy {
           grid-column: 1/-1;
           display: grid;
-          @include tablet{
-               text-align: center;
+
+          text-align: center;
+          @include tablet {
+               grid-template-columns: 80% 20%;
+               align-items: center;
           }
 
           ul {
+               @include laptop {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-evenly;
+               }
+
                h4 {
                     text-align: center;
                }

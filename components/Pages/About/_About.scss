@@ -16,7 +16,9 @@
                 margin: 1em;
             }
         }
-
+        @include laptop{
+            max-width: 900px;
+        }
         &__text {
             text-align: center;
 

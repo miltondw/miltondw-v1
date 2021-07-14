@@ -4,6 +4,11 @@
     &-content {
         display: grid;
 
+        @include laptop {
+            grid-template-columns: 30% 30% 1fr;
+            align-items: center;
+        }
+
         a {
             margin-left: .3em;
         }
@@ -20,6 +25,10 @@
 
                 @include tablet {
                     width: 70%;
+                }
+
+                @include laptop {
+                    width: 86%;
                 }
 
                 i {

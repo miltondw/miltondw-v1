@@ -1,5 +1,5 @@
 import CardServices from "./CardServices";
-import services from "./services.json";
+import services from "../../../db/services.json";
 export default function Services() {
   return (
     <div className="services">

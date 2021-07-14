@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Redes from "./redes.json";
+import Redes from "../../../db/redes.json";
 export default function Home() {
   const [texto, setText] = useState("");
   useEffect(() => {
@@ -30,7 +30,13 @@ export default function Home() {
       </div>
       <div className="home-redes">
         {Redes.map((r) => (
-          <a title={r.title} key={r.id} href={r.link}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            title={r.title}
+            key={r.id}
+            href={r.link}
+          >
             <i className={`fab fa-${r.title}`}></i>
           </a>
         ))}

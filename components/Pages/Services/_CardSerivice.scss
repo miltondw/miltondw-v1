@@ -7,12 +7,23 @@
     box-shadow: 1px 0px 2px 0px;
     margin-bottom: 2em;
     border-radius: 10px;
+    cursor: pointer;
+
     @include tablet {
         max-width: 260px;
         position: relative;
         margin: 0;
         align-self: center;
         justify-self: center;
+
+        &:hover {
+            box-shadow: 4px 5px 9px 0px;
+            transform: scale(1.01);
+        }
+    }
+
+    @include laptop {
+        max-width: 310px;
 
     }
 

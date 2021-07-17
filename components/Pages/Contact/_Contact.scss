@@ -16,7 +16,12 @@
         &__item {
             text-align: center;
             margin-bottom: 1em;
-
+            & a{
+                color: $primary-color;
+            }
+            & a:hover{
+                color: $text-color-link
+            }
             &:last-child {
                 display: grid;
                 grid-template-columns: 20% 80%;

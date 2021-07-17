@@ -24,7 +24,7 @@
         &__subtitle {
             transform: translateX(-100%);
             font-size: 24px;
-            color:$terciary-color;
+            color: $terciary-color;
         }
 
         &__barra {
@@ -40,5 +40,11 @@
         color: #ffff;
         transform: translate(0, 100vh);
         max-width: 98%;
+
+        & a:hover {
+            color: $background-color-dark;
+            transform: scale(1.1);
+
+        }
     }
 }

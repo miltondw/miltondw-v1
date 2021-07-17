@@ -5,6 +5,6 @@ module.exports = {
     includePaths: [path.join(__dirname, "scss")],
   },
   images: {
-    domains: [""],
+    domains: ["https://res.cloudinary.com"],
   },
 };

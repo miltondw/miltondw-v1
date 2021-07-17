@@ -11,7 +11,7 @@ export default function About() {
         </p>
         <Image
           layout="responsive"
-          src={"/img/about/perfil.jpg"}
+          src={"https://res.cloudinary.com/daekebmip/image/upload/v1625282077/nextjs_media/uiqsrsozzprtsfmhbukx.jpg"}
           alt={"miltondw"}
           width={200}
           height={150}

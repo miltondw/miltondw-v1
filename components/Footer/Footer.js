@@ -1,4 +1,4 @@
-import Contac from "../pages/Contact/Contact";
+import Contac from "../Pages/Contact/Contact";
 import Redes from "../../db/redes.json";
 export default function Footer() {
   return (

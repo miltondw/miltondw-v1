@@ -7,3 +7,22 @@ $regular-title:400;
 $main-font:"Lato";
 $font-regular:400;
 $font-bold:700;
+
+h1,
+h2 {
+    font-family: $main-title;
+    font-weight: $big-title;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main-title;
+    font-weight: $regular-title;
+}
+
+p,a{
+    font-family: $main-font;
+    font-weight: $font-regular;
+}

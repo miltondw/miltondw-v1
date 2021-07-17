@@ -1,6 +1,10 @@
 .header {
     width: 100%;
-    height: 7vh;
+    height: 2.5em;
+
+    @include laptop {
+        height: 3em;
+    }
 
     .menu {
         display: grid;
@@ -9,6 +13,12 @@
         width: 100%;
         align-self: flex-end;
         background: $text-color;
+        top: 0;
+        height: 2.5em;
+
+        @include laptop {
+            height: 3em;
+        }
 
         .logo {
             font-size: 18px;
@@ -25,23 +35,45 @@
     background: #ffff;
     position: fixed;
     width: 100%;
-    height: inherit;
+    height: 2.5em;
     top: 0;
     box-shadow: -2px 3px 17px 4px;
     z-index: 100;
+
+    @include laptop {
+        position: absolute;
+        top: 0;
+        width: fit-content;
+        z-index: 200;
+        box-shadow: none;
+        background: transparent;
+
+        height: 3em;
+
+    }
+
     &-content {
         display: flex;
         position: fixed;
         flex-direction: column;
         width: 100%;
         align-items: center;
-        top: 7vh;
+        top: 2.5em;
         padding-bottom: .9em;
         background: inherit;
         transform: translateY(-100%);
         transition-property: transform;
         transition-duration: 1s;
         z-index: 100;
+
+        @include laptop {
+            width: 50%;
+            flex-direction: row;
+            right: 0;
+            padding: 0;
+            height: 3em;
+        }
+
         &.show {
             transform: translateY(0);
             transition-property: transform;
@@ -54,14 +86,21 @@
             padding: 0.5em;
             border-bottom: 1px outset;
             width: 80%;
-            
+           
+            @include laptop {
+                border: none;
+                align-self: flex-end;
+            }
+
         }
 
         &__link {
             color: #010101;
-
+            &:hover{
+                color:$secondary-color;
+            }
             &.active {
-                color: red;
+                color: $secondary-color;
             }
         }
     }

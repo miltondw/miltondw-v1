@@ -1,0 +1,58 @@
+.contact {
+    display: grid;
+
+    &-content {
+        display: grid;
+
+        @include laptop {
+            grid-template-columns: 30% 30% 1fr;
+            align-items: center;
+        }
+
+        a {
+            margin-left: .3em;
+        }
+
+        &__item {
+            text-align: center;
+            margin-bottom: 1em;
+            & a{
+                color: $primary-color;
+            }
+            & a:hover{
+                color: $text-color-link
+            }
+            &:last-child {
+                display: grid;
+                grid-template-columns: 20% 80%;
+                width: 100%;
+                margin: auto;
+
+                @include tablet {
+                    width: 70%;
+                }
+
+                @include laptop {
+                    width: 86%;
+                }
+
+                i {
+                    align-self: center;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__address {
+            display: flex;
+
+            h3 {
+                align-self: center;
+            }
+
+            p {
+                margin-left: .2em;
+            }
+        }
+    }
+}

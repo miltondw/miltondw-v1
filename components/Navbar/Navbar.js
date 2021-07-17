@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import Items from "./Items.json";
+import Items from "../../db/items-menu.json";
 import { useRouter } from "next/router";
 export default function Navbar() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="menu">
         <h1 className="logo">
           <Link href="/">
-            <a>MiltonDw</a>
+            <a title="Inicio" >MiltonDw</a>
           </Link>
         </h1>
         <div onClick={() => setNav(!nav)} className="toggle-menu">
@@ -32,7 +32,7 @@ export default function Navbar() {
           {Items.map((item) => (
             <li key={item.id} className="navbar-content__item">
               <Link href={item.link}>
-                <a className={`navbar-content__link ${isActivo(item.link)}`}>
+                <a title={item.name} className={`navbar-content__link ${isActivo(item.link)}`}>
                   {item.name}
                 </a>
               </Link>

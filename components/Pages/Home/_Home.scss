@@ -20,19 +20,31 @@
             color: #fff;
             display: inline;
         }
+
         &__subtitle {
+            transform: translateX(-100%);
             font-size: 24px;
-            color: #18c5ad;
+            color: $terciary-color;
         }
+
         &__barra {
             color: #fff;
             font-weight: 800;
         }
     }
+
     &-redes {
         display: flex;
         justify-content: space-evenly;
         font-size: 35px;
         color: #ffff;
+        transform: translate(0, 100vh);
+        max-width: 98%;
+
+        & a:hover {
+            color: $background-color-dark;
+            transform: scale(1.1);
+
+        }
     }
 }

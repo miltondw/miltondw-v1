@@ -2,7 +2,39 @@
 import Head from "next/head";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+//Animation
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Layaut({ children }) {
+  const ref = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    const element = ref.current;
+    gsap.to(element.querySelector("#titleServices"), {
+      y: 0,
+      duration: 2,
+      opacity: 1,
+      ease: "bounce",
+      delay: 0,
+      scrollTrigger: {
+        trigger: element.querySelector("#titleServices"),
+      },
+    });
+  }, []);
+  useEffect(() => {
+    const element = ref.current;
+    gsap.to(element.querySelector("#titleAbout"), {
+      y: 0,
+      duration: 2,
+      opacity: 1,
+      ease: "bounce",
+      delay: 0,
+      scrollTrigger: {
+        trigger: element.querySelector("#titleAbout"),
+      },
+    });
+  }, []);
   return (
     <>
       <Head>
@@ -14,7 +46,9 @@ export default function Layaut({ children }) {
         />
       </Head>
       <Navbar />
-      <main className="main">{children}</main>
+      <main className="main" ref={ref}>
+        {children}
+      </main>
       <Footer />
     </>
   );

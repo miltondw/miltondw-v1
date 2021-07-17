@@ -86,7 +86,7 @@
             padding: 0.5em;
             border-bottom: 1px outset;
             width: 80%;
-
+           
             @include laptop {
                 border: none;
                 align-self: flex-end;
@@ -96,9 +96,11 @@
 
         &__link {
             color: #010101;
-
+            &:hover{
+                color:$secondary-color;
+            }
             &.active {
-                color: red;
+                color: $secondary-color;
             }
         }
     }

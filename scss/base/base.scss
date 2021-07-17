@@ -36,10 +36,10 @@ a {
 // }
 .Title {
     font-size: 32px;
-    border-bottom: 2px solid #008380;
+    border-bottom: 2px solid $terciary-color;
     width: fit-content;
     justify-self: center;
-    color: #0436ea;
+    color: $primary-color;
     transform: translateY(200%);
     opacity: 0;
 }

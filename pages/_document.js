@@ -3,11 +3,11 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="es">
         <Head>
           <meta
             name="description"
-            content=""
+            content="milton estrada desarrollador web y analista freelancer"
           />
           <link
             rel="stylesheet"

@@ -4,7 +4,6 @@ import Layaut from "../components/Template/Layaut";
 import Home from "../components/pages/Home/Home";
 import Services from "../components/pages/Services/Services";
 import About from "../components/pages/About/About";
-// import Contact from "../components/Pages/Contact/Contact";
 export default function App() {
   return (
     <Layaut>
@@ -14,7 +13,6 @@ export default function App() {
       <Home />
       <Services />
       <About />
-      {/* <Contact /> */}
     </Layaut>
   );
 }

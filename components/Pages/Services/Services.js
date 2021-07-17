@@ -1,32 +1,45 @@
 import CardServices from "./CardServices";
 import services from "../../../db/services.json";
-import { useEffect, useRef, useState } from "react";
+//Animation
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Services() {
- const [mover,setMover]= useState("")
-  const animationCard = useRef();
+  const cardService = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    window.addEventListener("scroll", animation);
+    const element = cardService.current;
+    services.map((s) => {
+      return gsap.to(element.querySelector(`#card-${s.id}`), {
+        scale: 1,
+        duration: 2,
+        ease: "",
+        delay: 0,
+        scrollTrigger: {
+          trigger: element.querySelector(`#card-${s.id}`),
+        },
+      });
+      // return console.log(element.querySelector(`#card-${s.id}`));
+    });
   }, []);
-  const animation = () => {
-    let positionObj = animationCard.current.getBoundingClientRect().top;
-    console.log(positionObj,'obj');
-    let SizeViewport = window.innerHeight / 3;
-    console.log(SizeViewport,'viw');
-   
-  };
   return (
-    <div id="servicios" className="services" onScroll={animation}>
-      <h2 className="Title">Servicios</h2>
-      {services.map((s) => (
-        <CardServices
-          key={s.id}
-          src={s.src}
-          title={s.title}
-          description={s.description}
-          link={s.link}
-          referencia={animationCard}
-        />
-      ))}
+    <div id="servicios" className="services" ref={cardService}>
+      <h2 className="Title" id="titleServices">
+        Servicios
+      </h2>
+
+      {services.map((s) => {
+        return (
+          <CardServices
+            key={s.id}
+            src={s.src}
+            title={s.title}
+            description={s.description}
+            link={s.link}
+            id={`card-${s.id}`}
+          />
+        );
+      })}
     </div>
   );
 }

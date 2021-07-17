@@ -4,7 +4,7 @@ import Btn from "../../Btn/Btn";
 export default function About() {
   return (
     <div className="about" id="quien-soy">
-      <h2 className="Title">¿Quién soy?</h2>
+      <h2 className="Title" id="titleAbout">¿Quién soy?</h2>
       <div className="about-content">
         <p className="about-content__text">
           Mi Nombre es Milton Estrada Soy un apasionado por la innovación y la

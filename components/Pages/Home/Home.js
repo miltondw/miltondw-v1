@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Redes from "../../../db/redes.json";
+import gsap from "gsap";
 export default function Home() {
   const [texto, setText] = useState("");
   useEffect(() => {
@@ -18,17 +19,33 @@ export default function Home() {
       }
     }, 200);
   };
+  const circleRef = useRef(null);
+  const rightRef = useRef(null);
+  useEffect(() => {
+    gsap.to("#thirdCircle", {
+      y: 1,
+      duration: 3,
+      ease: "bounce",
+      delay: 1,
+    });
+    gsap.to("#rightRef", {
+      x: 0.1,
+      duration: 2,
+      ease: "",
+      delay: 1,
+    });
+  }, []);
 
   return (
     <div className="home">
       <div className="home-title">
         <h1 className="home-title__name">Milton Estrada</h1>
-        <h2 className="home-title__subtitle">
+        <h2 className="home-title__subtitle" id="rightRef" ref={rightRef}>
           {texto}
           <span className="home-title__barra">|</span>
         </h2>
       </div>
-      <div className="home-redes">
+      <div className="home-redes" ref={circleRef} id="thirdCircle">
         {Redes.map((r) => (
           <a
             target="_blank"

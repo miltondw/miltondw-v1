@@ -1,6 +1,6 @@
 .card-services {
     background: #fafafa;
-    max-width: 340px;
+    max-width: 250px;
     margin: auto;
     border: 1px solid #ccc;
     padding: 1em;
@@ -8,9 +8,11 @@
     margin-bottom: 2em;
     border-radius: 10px;
     cursor: pointer;
+    transform: scale(0);
+
 
     @include tablet {
-        max-width: 260px;
+        max-width: 200px;
         position: relative;
         margin: 0;
         align-self: center;
@@ -23,7 +25,7 @@
     }
 
     @include laptop {
-        max-width: 310px;
+        max-width: 260px;
 
     }
 
@@ -44,13 +46,8 @@
             grid-column: 1/-1;
         }
     }
-}
-
-@keyframes mover {
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0);
+    @include laptop{
+        max-width: 1000px;
+        margin: auto;
     }
 }

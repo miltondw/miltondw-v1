@@ -1,11 +1,19 @@
 export default function Contact() {
   return (
     <div id="contactame" className="contact">
-      <h2 className="Title">Contactame</h2>
+      <h2
+        className="Title"
+        id="titleContact"
+        style={{ opacity: "1", transform: "none" }}
+      >
+        Contactame
+      </h2>
       <div className="contact-content">
         <div className="contact-content__item">
           <i className="fab fa-whatsapp"></i>
-          <a title="+573229444460" href="tel:+573229444460">+573229444460</a>
+          <a title="+573229444460" href="tel:+573229444460">
+            +573229444460
+          </a>
         </div>
         <div className="contact-content__item">
           <i className="fas fa-envelope-open-text"></i>

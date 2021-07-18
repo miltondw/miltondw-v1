@@ -19,8 +19,8 @@ export default function Footer() {
           ))}
         </div>
         <div className="footer-copy">
-          <ul>
             <h4>Creditos de fotografía</h4>
+          <ul>
             <li>
               Photo by{" "}
               <a href="https://unsplash.com/@zanilic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">

@@ -26,7 +26,8 @@
           justify-items: center;
           font-size: 35px;
           color: #2c74cd;
-          & a:hover{
+
+          & a:hover {
                color: $primary-color;
                transform: scale(1.1);
           }
@@ -43,9 +44,11 @@
           display: grid;
 
           text-align: center;
+
           @include tablet {
-               grid-template-columns: 80% 20%;
+               grid-template-columns: 40% 60%;
                align-items: center;
+               margin-top: 1em;
           }
 
           ul {

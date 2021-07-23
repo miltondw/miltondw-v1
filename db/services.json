@@ -2,7 +2,7 @@
     {
         "src": "/img/services/consultoria.png",
         "link": "servicios#consultoria",
-        "title": "Estrategia y consultoría",
+        "title": "Consultoría Tecnológica",
         "description": "Analizamos tu negocio y mercado. Basándonos en tus objetivos para brindarte las mejores soluciones",
         "id": 1
     },
@@ -31,14 +31,14 @@
         "src": "/img/services/tienda-online.png",
         "link": "servicios#tienda-online",
         "title": "Desarrollo de Tienda Online",
-        "description": "Ya tus clientes están en la red. Dile adíos a las limitaciones geográficas y físicas ",
+        "description": "Ya tus clientes están en la red. Dile adiós a las limitaciones geográficas y físicas ",
         "id": 5
     },
     {
         "src": "/img/services/digital-marketing.png",
         "link": "servicios#digital-marketing",
         "title": "Marketing Digital",
-        "description": "Permíteme que clientes descubran tu empresa y tus servicios a través de un contenido útil e informativo.",
+        "description": "Permíteme que los clientes descubran tu empresa y tus servicios a través de un contenido útil e informativo.",
         "id": 6
     }
 ]

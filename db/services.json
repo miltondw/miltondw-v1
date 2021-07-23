@@ -4,6 +4,7 @@
         "link": "servicios#consultoria",
         "title": "Consultoría Tecnológica",
         "description": "Analizamos tu negocio y mercado. Basándonos en tus objetivos para brindarte las mejores soluciones",
+        "icon": "server",
         "id": 1
     },
     {
@@ -11,6 +12,7 @@
         "link": "servicios#organizacion-y-logistica",
         "title": "Organización y logística Interna",
         "description": "Las mejores metodologías, aplicadas en tu área de trabajo te ayudarán a aumentar la productividad.",
+        "icon": "sitemap",
         "id": 2
     },
     {
@@ -18,6 +20,7 @@
         "link": "servicios#landing-page",
         "title": "Creación de sitio Web",
         "description": "La creación de un sitio web no solo te dará credibilidad, sino que también ayudará a mostrar tus soluciones al mercado.",
+        "icon": "laptop",
         "id": 3
     },
     {
@@ -25,6 +28,7 @@
         "link": "servicios#web-app",
         "title": "Aplicaciones Web",
         "description": "Crea la mejor web App  que se adapte a tu empresa, basada en la nube con las mejores herramientas del mercado.",
+        "icon": "mobile",
         "id": 4
     },
     {
@@ -32,13 +36,15 @@
         "link": "servicios#tienda-online",
         "title": "Desarrollo de Tienda Online",
         "description": "Ya tus clientes están en la red. Dile adiós a las limitaciones geográficas y físicas ",
+        "icon": "cash-register",
         "id": 5
     },
     {
         "src": "/img/services/digital-marketing.png",
-        "link": "servicios#digital-marketing",
+        "link": "servicios#marketing-digital",
         "title": "Marketing Digital",
         "description": "Permíteme que los clientes descubran tu empresa y tus servicios a través de un contenido útil e informativo.",
+        "icon": "funnel-dollar",
         "id": 6
     }
 ]

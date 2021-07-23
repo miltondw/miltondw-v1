@@ -16,25 +16,10 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           ></link>
 
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-RY7X17QLHV`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-RY7X17QLHV');`,
-            }}
-          />
           {/* Facebook Pixel Code  */}
           <script
             dangerouslySetInnerHTML={{
-              __html: `
-              !function(f,b,e,v,n,t,s)
+              __html: ` !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -46,7 +31,6 @@ fbq('init', '403484481197846');
 fbq('track', 'PageView');`,
             }}
           />
-
           <noscript>
             <Image
               layout="responsive"
@@ -56,14 +40,26 @@ fbq('track', 'PageView');`,
               alt={"facebook pixel"}
               width="1"
               height="1"
-              style={{ display: "none" }}
+              className="facebook-pixel"
             />
           </noscript>
-          {/* <! End Facebook Pixel Code */}
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-RY7X17QLHV`}
+          />
           <script
             dangerouslySetInnerHTML={{
-              __html: `
-              window.smartlook||(function(d) {
+              __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RY7X17QLHV');`,
+            }}
+          />
+          {/* Global Site smartlook */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: ` window.smartlook||(function(d) {
     var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
     var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
     c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);

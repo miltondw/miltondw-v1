@@ -31,7 +31,6 @@ export default function Home() {
     gsap.to("#rightRef", {
       x: 0.1,
       duration: 2,
-      ease: "",
       delay: 1,
     });
   }, []);

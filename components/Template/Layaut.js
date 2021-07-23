@@ -11,29 +11,61 @@ export default function Layaut({ children }) {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const element = ref.current;
-    gsap.to(element.querySelector("#titleServices"), {
-      y: 0,
-      duration: 2,
-      opacity: 1,
-      ease: "bounce",
-      delay: 0,
-      scrollTrigger: {
-        trigger: element.querySelector("#titleServices"),
+    gsap.fromTo(
+      element.querySelector("#titleServices"),
+      {
+        opacity: 0,
+        y: "200%",
       },
-    });
+      {
+        opacity: 1,
+        duration: 2,
+        y: 0,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: element.querySelector("#titleServices"),
+        },
+      }
+    );
+    // gsap.to(element.querySelector("#titleServices"), {
+    //   y: 0,
+    //   duration: 2,
+    //   opacity: 1,
+    //   ease: "bounce",
+    //   delay: 0,
+    //   scrollTrigger: {
+    //     trigger: element.querySelector("#titleServices"),
+    //   },
+    // });
   }, []);
   useEffect(() => {
     const element = ref.current;
-    gsap.to(element.querySelector("#titleAbout"), {
-      y: 0,
-      duration: 2,
-      opacity: 1,
-      ease: "bounce",
-      delay: 0,
-      scrollTrigger: {
-        trigger: element.querySelector("#titleAbout"),
+    gsap.fromTo(
+      element.querySelector("#titleAbout"),
+      {
+        opacity: 0,
+        y: "200%",
       },
-    });
+      {
+        opacity: 1,
+        duration: 2,
+        y: 0,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: element.querySelector("#titleAbout"),
+        },
+      }
+    );
+    // gsap.to(element.querySelector("#titleAbout"), {
+    //   y: 0,
+    //   duration: 2,
+    //   opacity: 1,
+    //   ease: "bounce",
+    //   delay: 0,
+    //   scrollTrigger: {
+    //     trigger: element.querySelector("#titleAbout"),
+    //   },
+    // });
   }, []);
   return (
     <>

@@ -1,5 +1,10 @@
 #__next {
     display: grid;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
 }
 
 ul {
@@ -40,6 +45,8 @@ a {
     width: fit-content;
     justify-self: center;
     color: $primary-color;
-    transform: translateY(200%);
-    opacity: 0;
+}
+
+.facebook-pixel {
+    display: none !important;
 }

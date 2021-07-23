@@ -23,7 +23,7 @@ export default function Services() {
     });
   }, []);
   return (
-    <div id="servicios" className="services" ref={cardService}>
+    <div id="servicios" className="services-home" ref={cardService}>
       <h2 className="Title" id="titleServices">
         Servicios
       </h2>

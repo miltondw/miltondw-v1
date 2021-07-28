@@ -1,8 +1,9 @@
 import Layaut from "../../components/Template/Layaut";
 import services from "../../db/services.json";
 import Link from "next/link";
+import Image from "next/image";
 //Animation
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Servicios() {
@@ -94,6 +95,12 @@ export default function Servicios() {
       duration: 2,
       opacity: 1,
     });
+    gsap.to(".services-image", {
+      x: 0,
+      duration: 2,
+      delay: 2,
+      opacity: 1,
+    });
     gsap.fromTo(
       element.querySelector(`#services-paragraph`),
       {
@@ -144,6 +151,21 @@ export default function Servicios() {
       .getElementById(ancla)
       .scrollIntoView({ block: "start", behavior: "smooth" });
   };
+  const [arrow, setArrow] = useState({
+    consultoria: false,
+    logistica: false,
+    landing: false,
+    app: false,
+    shop: false,
+    marketing: false,
+  });
+  const subNavbar = (e) => {
+    // e.target.id.replace("servicios#", "")
+    setArrow({
+      ...arrow,
+      [e]: !arrow[e],
+    });
+  };
   return (
     <Layaut>
       <div className="services" ref={ref}>
@@ -169,7 +191,62 @@ export default function Servicios() {
               ))}
             </ul>
           </nav>
+          <nav className="services-subNavbar">
+            <ul className="services-subNavbar__ul">
+              {services.map((s) => (
+                <li key={s.id} className="services-subNavbar__item">
+                  <i
+                    className={`fas fa-${s.icon} services-subNavbar__icon`}
+                  ></i>
+                  <Link href={`/${s.link}`}>
+                    <a
+                      onClick={(e) => {
+                        handleClick(e);
+                      }}
+                      className="services-subNavbar__link"
+                    >
+                      {s.title}
+                    </a>
+                  </Link>
+                  {/* Arrow */}
+                  <i
+                    className={`fas fa-chevron-up`}
+                    id={s.link.replace("servicios#", "")}
+                    // onMouseOver={(e) => subNavbar(e.target.id)}
+                    onClick={subNavbar("consultoria")}
+                  ></i>
+                  {s.items ? (
+                    <ul
+                      className={`subNavbar ${
+                        arrow[s.link.replace("servicios#", "")]
+                          ? "subNavbar--active"
+                          : "subNavbar--false"
+                      }`}
+                      id={s.link.replace("servicios#", "")}
+                    >
+                      {s.items.map((item) => (
+                        <li className="subNavbar__items" key={item}>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    ""
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
           <div className="services-content-paragraph">
+            <div className="services-image">
+              <Image
+                layout="responsive"
+                src={"/img/services/consulting/consulting.jpg"}
+                alt={"consultoria tecnoligaca-MiltonDw"}
+                width={60}
+                height={50}
+              />
+            </div>
             <p className="services-paragraph">
               Un crecimiento de adopción de la tecnología está Creciendo. Y está
               acelerando, también lo ha hecho la necesidad de adoptar
@@ -209,7 +286,17 @@ export default function Servicios() {
               >
                 ¿Por qué pedir una consultoría tecnológica?
               </h3>
+
               <div className="services-consultoria__content" id="consultoria-1">
+                <div className="services-image">
+                  <Image
+                    layout="responsive"
+                    src={"/img/services/consulting/question.jpg"}
+                    alt={"consultoria tecnoligaca-MiltonDw"}
+                    width={60}
+                    height={50}
+                  />
+                </div>
                 <p className="services-consultoria__paragraph">
                   La tecnología se ha convertido en una herramienta fundamental
                   del éxito. Debido a su rápido crecimiento y expansión en

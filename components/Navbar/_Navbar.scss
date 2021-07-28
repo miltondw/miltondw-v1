@@ -4,6 +4,13 @@
 
     @include laptop {
         height: 3em;
+        background: $text-color;
+
+        &-content {
+            height: inherit;
+            max-width: 850px;
+            margin: auto;
+        }
     }
 
     .menu {
@@ -18,6 +25,7 @@
 
         @include laptop {
             height: 3em;
+            left: 0;
         }
 
         .logo {
@@ -26,6 +34,11 @@
             width: fit-content;
             margin-left: .6em;
             text-shadow: -2px 3px 4px;
+
+            @include laptop {
+                position: relative;
+                left: 5%;
+            }
 
         }
     }
@@ -41,9 +54,9 @@
     z-index: 100;
 
     @include laptop {
-        position: absolute;
+        position: fixed;
         top: 0;
-        width: fit-content;
+        max-width: 850px;
         z-index: 200;
         box-shadow: none;
         background: transparent;
@@ -72,6 +85,8 @@
             right: 0;
             padding: 0;
             height: 3em;
+            position: relative;
+            float: right;
         }
 
         &.show {
@@ -86,7 +101,7 @@
             padding: 0.5em;
             border-bottom: 1px outset;
             width: 80%;
-           
+
             @include laptop {
                 border: none;
                 align-self: flex-end;
@@ -96,9 +111,11 @@
 
         &__link {
             color: #010101;
-            &:hover{
-                color:$secondary-color;
+
+            &:hover {
+                color: $secondary-color;
             }
+
             &.active {
                 color: $secondary-color;
             }

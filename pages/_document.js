@@ -31,18 +31,7 @@ fbq('init', '403484481197846');
 fbq('track', 'PageView');`,
             }}
           />
-          <noscript>
-            <Image
-              layout="responsive"
-              src={
-                "https://www.facebook.com/tr?id=403484481197846&ev=PageView&noscript=1"
-              }
-              alt={"facebook pixel"}
-              width="1"
-              height="1"
-              className="facebook-pixel"
-            />
-          </noscript>
+         
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
@@ -69,6 +58,18 @@ fbq('track', 'PageView');`,
           />
         </Head>
         <body>
+        <noscript>
+            <Image
+              layout="responsive"
+              src={
+                "https://www.facebook.com/tr?id=403484481197846&ev=PageView&noscript=1"
+              }
+              alt={"facebook pixel"}
+              width="1"
+              height="1"
+              className="facebook-pixel"
+            />
+          </noscript>
           <Main />
           <NextScript />
         </body>

@@ -1,50 +1,64 @@
 [
     {
-        "src": "/img/services/consultoria.png",
+        "src": "/img/services/consulting/consultoria.png",
         "link": "servicios#consultoria",
         "title": "Consultoría Tecnológica",
         "description": "Analizamos tu negocio y mercado. Basándonos en tus objetivos para brindarte las mejores soluciones",
         "icon": "server",
+        "items": [
+            "¿Por qué pedir una consultoría tecnológica?",
+            "¿Qué buscamos?",
+            "¿Cómo hacemos la consultoría?"
+        ],
         "id": 1
     },
     {
         "src": "/img/services/organizacion-y-logistica-interna.png",
-        "link": "servicios#organizacion-y-logistica",
+        "link": "servicios#logistica",
         "title": "Organización y logística Interna",
         "description": "Las mejores metodologías, aplicadas en tu área de trabajo te ayudarán a aumentar la productividad.",
         "icon": "sitemap",
+        "items": [
+            "¿Por qué es importante tener una logística interna?",
+            "¿Dónde veo los beneficios?",
+            "¿Cuándo necesito una logística interna?"
+        ],
         "id": 2
     },
     {
         "src": "/img/services/landing-page.png",
-        "link": "servicios#landing-page",
+        "link": "servicios#landing",
         "title": "Creación de sitio Web",
         "description": "La creación de un sitio web no solo te dará credibilidad, sino que también ayudará a mostrar tus soluciones al mercado.",
         "icon": "laptop",
+        "items": [],
         "id": 3
     },
     {
         "src": "/img/services/web-app.png",
-        "link": "servicios#web-app",
+        "link": "servicios#app",
         "title": "Aplicaciones Web",
         "description": "Crea la mejor web App  que se adapte a tu empresa, basada en la nube con las mejores herramientas del mercado.",
         "icon": "mobile",
+        "items": [],
         "id": 4
     },
     {
         "src": "/img/services/tienda-online.png",
-        "link": "servicios#tienda-online",
+        "link": "servicios#shop",
         "title": "Desarrollo de Tienda Online",
         "description": "Ya tus clientes están en la red. Dile adiós a las limitaciones geográficas y físicas ",
         "icon": "cash-register",
+        "items": [],
         "id": 5
     },
     {
         "src": "/img/services/digital-marketing.png",
-        "link": "servicios#marketing-digital",
+        "link": "servicios#marketing",
         "title": "Marketing Digital",
         "description": "Permíteme que los clientes descubran tu empresa y tus servicios a través de un contenido útil e informativo.",
         "icon": "funnel-dollar",
+        "items": [],
         "id": 6
     }
 ]

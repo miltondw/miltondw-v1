@@ -1,7 +1,7 @@
 [
     {
         "src": "/img/services/consulting/consultoria.png",
-        "link": "servicios#consultoria",
+        "link": "consultoria",
         "title": "Consultoría Tecnológica",
         "description": "Analizamos tu negocio y mercado. Basándonos en tus objetivos para brindarte las mejores soluciones",
         "icon": "server",
@@ -14,11 +14,12 @@
     },
     {
         "src": "/img/services/organizacion-y-logistica-interna.png",
-        "link": "servicios#logistica",
+        "link": "logistica",
         "title": "Organización y logística Interna",
         "description": "Las mejores metodologías, aplicadas en tu área de trabajo te ayudarán a aumentar la productividad.",
         "icon": "sitemap",
         "items": [
+            "¿Qué es la logística interna?",
             "¿Por qué es importante tener una logística interna?",
             "¿Dónde veo los beneficios?",
             "¿Cuándo necesito una logística interna?"
@@ -27,7 +28,7 @@
     },
     {
         "src": "/img/services/landing-page.png",
-        "link": "servicios#landing",
+        "link": "landing",
         "title": "Creación de sitio Web",
         "description": "La creación de un sitio web no solo te dará credibilidad, sino que también ayudará a mostrar tus soluciones al mercado.",
         "icon": "laptop",
@@ -36,7 +37,7 @@
     },
     {
         "src": "/img/services/web-app.png",
-        "link": "servicios#app",
+        "link": "app",
         "title": "Aplicaciones Web",
         "description": "Crea la mejor web App  que se adapte a tu empresa, basada en la nube con las mejores herramientas del mercado.",
         "icon": "mobile",
@@ -45,7 +46,7 @@
     },
     {
         "src": "/img/services/tienda-online.png",
-        "link": "servicios#shop",
+        "link": "shop",
         "title": "Desarrollo de Tienda Online",
         "description": "Ya tus clientes están en la red. Dile adiós a las limitaciones geográficas y físicas ",
         "icon": "cash-register",
@@ -54,7 +55,7 @@
     },
     {
         "src": "/img/services/digital-marketing.png",
-        "link": "servicios#marketing",
+        "link": "marketing",
         "title": "Marketing Digital",
         "description": "Permíteme que los clientes descubran tu empresa y tus servicios a través de un contenido útil e informativo.",
         "icon": "funnel-dollar",

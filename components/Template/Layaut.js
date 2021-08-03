@@ -67,6 +67,7 @@ export default function Layaut({ children }) {
     //   },
     // });
   }, []);
+
   return (
     <>
       <Head>

@@ -33,8 +33,58 @@ export default function Servicios() {
         },
       }
     );
-
-    for (let i = 2; i <= 3; i++) {
+    gsap.fromTo(
+      element.querySelector(`#logistica__title`),
+      {
+        opacity: 0,
+        y: "200%",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: element.querySelector(`#services-logistica`),
+        },
+      }
+    );
+    for (let i = 0; i <= services[1].items.length - 1; i++) {
+      gsap.fromTo(
+        element.querySelectorAll(`#${link(services[1].items[i])}__subtitle`),
+        {
+          opacity: 0,
+          y: "200%",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          scrollTrigger: {
+            trigger: element.querySelector(
+              `#${link(services[1].items[i])}__content`
+            ),
+          },
+        }
+      );
+      gsap.fromTo(
+        element.querySelectorAll(`#${link(services[1].items[i])}__paragraph`),
+        {
+          opacity: 0,
+          scale: 0,
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 2,
+          scrollTrigger: {
+            trigger: element.querySelector(
+              `#${link(services[1].items[i])}__content`
+            ),
+          },
+        }
+      );
+    }
+    for (let i = 2; i <= services; i++) {
       gsap.fromTo(
         element.querySelectorAll(`.consultoria-items-${i}`),
         {
@@ -53,7 +103,6 @@ export default function Servicios() {
         }
       );
     }
-
     for (let i = 0; i <= 2; i++) {
       gsap.fromTo(
         element.querySelector(`#${link(services[0].items[i])}__subtitle`),
@@ -88,9 +137,6 @@ export default function Servicios() {
         }
       );
     }
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
     gsap.to(".services-content__nav", {
       x: 0,
       duration: 2,
@@ -140,7 +186,6 @@ export default function Servicios() {
       }
     );
   }, []);
-
   return (
     <Layaut>
       <div className="services" ref={ref}>

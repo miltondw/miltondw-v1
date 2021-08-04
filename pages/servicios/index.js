@@ -475,7 +475,9 @@ export default function Servicios() {
             </div>
 
             <div className="services-content__services" id="services-logistica">
-              <h2 className="Title">Organización y logística Interna</h2>
+              <h2 className="Title" id="logistica__title">
+                Organización y logística Interna
+              </h2>
               <div className="services-content">
                 <p className="services-paragraph">
                   La logística aumenta su importancia a la hora del plan

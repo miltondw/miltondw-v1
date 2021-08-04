@@ -14,7 +14,7 @@ export default function CardServices({ src, title, description, link, id }) {
       />
       <h3 className="card-services__title">{title}</h3>
       <p className="card-services__description">{description}</p>
-      <Btn title="Saber Más" link={`/${link}`} />
+      <Btn title="Saber Más" link={`/servicios/#${link}__title`} />
     </div>
   );
 }

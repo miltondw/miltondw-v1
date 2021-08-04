@@ -23,7 +23,7 @@ export default function About() {
           </p>
           <p className="about-content__paragraph">
             Soy Full Stack Developer, Analista de Marketing e investigador y
-            analista de soluciones basadas en la web.
+            desarrolador de soluciones basadas en la web.
           </p>
           <p className="about-content__paragraph">
             Mi experiencia se basa en la recopilación de empresas y fundaciones

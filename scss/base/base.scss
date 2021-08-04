@@ -45,12 +45,8 @@ a {
     bottom: 5em;
     right: 1em;
     z-index: 10;
-    font-size: 1.3em;
+    font-size: 1.5em;
     transform: scale(0);
-    @include tablet{
-        font-size: 1.5em;
-        bottom: 4em;
-    }
     @include laptop{
         font-size: 1.8em;
         bottom: 3em;

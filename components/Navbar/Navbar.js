@@ -32,14 +32,13 @@ export default function Navbar() {
           <ul className={`navbar-content ${nav ? "show" : ""}`}>
             {Items.map((item) => (
               <li key={item.id} className="navbar-content__item">
-                <Link href={item.link}>
-                  <a
-                    title={item.name}
-                    className={`navbar-content__link ${isActivo(item.link)}`}
-                  >
-                    {item.name}
-                  </a>
-                </Link>
+                <a
+                  href={item.link}
+                  title={item.name}
+                  className={`navbar-content__link ${isActivo(item.link)}`}
+                >
+                  {item.name}
+                </a>
               </li>
             ))}
           </ul>

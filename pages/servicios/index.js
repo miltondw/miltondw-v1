@@ -11,9 +11,8 @@ export default function Servicios() {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const element = ref.current;
-
     gsap.fromTo(
-      element.querySelector(`#consultoria-1`),
+      element.querySelector(`#${link(services[0].items[0])}__content`),
       {
         opacity: 0,
         y: "200%",
@@ -23,7 +22,9 @@ export default function Servicios() {
         y: 0,
         duration: 2,
         scrollTrigger: {
-          trigger: element.querySelector(`#consultoria-title-1`),
+          trigger: element.querySelector(
+            `#${link(services[0].items[0])}__subtitle`
+          ),
         },
       }
     );
@@ -40,14 +41,17 @@ export default function Servicios() {
           y: 0,
           duration: 2,
           scrollTrigger: {
-            trigger: element.querySelector(`#consultoria-title-${i}`),
+            trigger: element.querySelector(
+              `#${link(services[0].items[i - 1])}__subtitle`
+            ),
           },
         }
       );
     }
-    for (let i = 1; i <= 3; i++) {
+
+    for (let i = 0; i <= 2; i++) {
       gsap.fromTo(
-        element.querySelector(`#consultoria-title-${i}`),
+        element.querySelector(`#${link(services[0].items[i])}__subtitle`),
         {
           scale: 0,
         },
@@ -55,7 +59,9 @@ export default function Servicios() {
           scale: 1,
           duration: 1,
           scrollTrigger: {
-            trigger: element.querySelector(`#consultoria-title-${i}`),
+            trigger: element.querySelector(
+              `#${link(services[0].items[i])}__subtitle`
+            ),
           },
         }
       );
@@ -117,21 +123,6 @@ export default function Servicios() {
       }
     );
     gsap.fromTo(
-      element.querySelector(`#consultoria-title`),
-      {
-        opacity: 0,
-        y: "200%",
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: element.querySelector(`.services-consultoria`),
-        },
-      }
-    );
-    gsap.fromTo(
       element.querySelector(`.services-content__nav`),
       {
         opacity: 0,
@@ -147,7 +138,6 @@ export default function Servicios() {
   const handleClick = (e) => {
     e.preventDefault();
     let ancla = e.target.hash.substring(1);
-    console.log(ancla);
     document
       .getElementById(ancla)
       .scrollIntoView({ block: "start", behavior: "smooth" });
@@ -230,7 +220,7 @@ export default function Servicios() {
                     >
                       {s.items.map((item) => (
                         <li className="subNavbar__items" key={link(item)}>
-                          <Link href={`/servicios#${link(item)}`}>
+                          <Link href={`/servicios#${link(item)}__subtitle`}>
                             <a
                               onClick={(e) => {
                                 handleClick(e);
@@ -287,7 +277,7 @@ export default function Servicios() {
               id="services-consultoria"
             >
               <div className="services-consultoria">
-                <h2 className="Title" id="consultoria-title">
+                <h2 className="Title" id={`${link(services[0].link)}__title`}>
                   Consultoría Tecnológica
                 </h2>
                 <p
@@ -301,7 +291,7 @@ export default function Servicios() {
                 </p>
 
                 <h3
-                  id="consultoria-title-1"
+                  id={`${link(services[0].items[0])}__subtitle`}
                   className="services-consultoria__title"
                 >
                   ¿Por qué pedir una consultoría tecnológica?
@@ -309,7 +299,7 @@ export default function Servicios() {
 
                 <div
                   className="services-consultoria__content"
-                  id="consultoria-1"
+                  id={`${link(services[0].items[0])}__content`}
                 >
                   <div className="services-image">
                     <Image
@@ -331,7 +321,7 @@ export default function Servicios() {
                 </div>
 
                 <h3
-                  id="consultoria-title-2"
+                  id={`${link(services[0].items[1])}__subtitle`}
                   className="services-consultoria__title"
                 >
                   ¿Qué buscamos?
@@ -341,29 +331,29 @@ export default function Servicios() {
                   id="consultoria-2"
                 >
                   <ul className="services-consultoria__ul">
-                    <li className="services-consultoria__item consultoria-items-2">
+                    <li className="services__item consultoria-items-2">
                       Que la empresa que contrata el servicio puede fijar todos
                       sus esfuerzos en un objetivo establecido, lo que aumenta
                       la rentabilidad del negocio en sí.
                     </li>
-                    <li className="services-consultoria__item consultoria-items-2">
+                    <li className="services__item consultoria-items-2">
                       Acelerar tu crecimiento, reducir costos, disminuir
                       riesgos, atraer y desarrollar talentos y optimizar
                       procesos importantes
                     </li>
-                    <li className="services-consultoria__item consultoria-items-2">
+                    <li className="services__item consultoria-items-2">
                       Se pueden ahorrar los gastos producidos por las áreas
                       operativas afectadas reduciendo el nivel de estrés y de
                       asignaciones rutinarias de la empresa, ya que se optimiza
                       con los servicios tecnológicos que se recomienden.
                     </li>
-                    <li className="services-consultoria__item consultoria-items-2">
+                    <li className="services__item consultoria-items-2">
                       Dar una contratación temporal para un proyecto. Donde la
                       contratación permanente de empleados no es necesaria y así
                       disminuir el gasto operario y aprovechar la experiencia y
                       conocimiento puntual del consultor.
                     </li>
-                    <li className="services-consultoria__item consultoria-items-2">
+                    <li className="services__item consultoria-items-2">
                       Lograr tus objetivos con recomendaciones y sugerencias
                       externas y más objetivas
                     </li>
@@ -371,7 +361,7 @@ export default function Servicios() {
                 </div>
 
                 <h3
-                  id="consultoria-title-3"
+                  id={`${link(services[0].items[2])}__subtitle`}
                   className="services-consultoria__title"
                 >
                   ¿Cómo hacemos la consultoría?
@@ -390,37 +380,37 @@ export default function Servicios() {
                     papel muy importante. Las siguientes preguntas nos ayudan a
                     evaluar muchos puntos de vista y análisis general:
                   </p>
-                  <ul className="services-consultoria__ul sub-1">
-                    <li className="services-consultoria__item consultoria-items-3">
+                  <ul className="services__ul sub-1">
+                    <li className="services__item consultoria-items-3">
                       ¿Cómo se está implementando la tecnología en su negocio?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Qué soluciones de software utiliza actualmente y cómo las
                       aprovecha?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Qué problemas le han estado preocupando con su software o
                       red?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Cada cuanto los empleados reciben apoyo o estudio de la
                       tecnología existente?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Qué tan rápido está creciendo su organización?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Tiene planes u objetivos para la nueva tecnología o la
                       que ya estás utilizando?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Qué procesos hay en tu empresa?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Qué procesos estás optimizando con la tecnología que
                       implementas?
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       ¿Con cuánta frecuencia le haces seguimiento a tus
                       procesos?
                     </li>
@@ -443,23 +433,23 @@ export default function Servicios() {
                     existente con una evaluación. La información técnica que
                     obtenemos nos dice:
                   </p>
-                  <ul className="sub-2 services-consultoria__ul">
-                    <li className="services-consultoria__item consultoria-items-3">
+                  <ul className="sub-2 services__ul">
+                    <li className="services__item consultoria-items-3">
                       Lo que existe actualmente
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       Que es demasiado viejo u obsoleto
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       Qué podría simplificarse o mejorarse
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       Lo que falta por implementar
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       Gastos innecesarios
                     </li>
-                    <li className="services-consultoria__item consultoria-items-3">
+                    <li className="services__item consultoria-items-3">
                       Personal implicado
                     </li>
                   </ul>
@@ -495,12 +485,104 @@ export default function Servicios() {
                   todos tus procesos.
                 </p>
                 <h3
-                  id="consultoria-title-1"
+                  id={`${link(services[1].items[0])}__subtitle`}
                   className="services-consultoria__title"
                 >
-                  ¿Qué es logística interna?
+                  ¿Qué es la logística interna?
                 </h3>
+                <div className="services-logistica__content_paragraph">
+                  <p className="services-paragraph">
+                    Es el área de operaciones de apoyo que ocurren dentro de una
+                    empresa. Se pueden presenciar diversos procesos, como
+                    almacenaje, control de stock, sistemas de automatización,
+                    manejo de materiales, equipamientos y tecnología interna
+                    como software entre otros.
+                  </p>
+                </div>
+                <h3
+                  id={`${link(services[1].items[1])}__subtitle`}
+                  className="services-consultoria__title"
+                >
+                  ¿Por qué es importante tener una logística interna?
+                </h3>
+                <div className="services-logistica__content_paragraph">
+                  <p className="services-paragraph">
+                    Un buen uso de la misma trae muchos beneficios y un salto
+                    exponecial en un mercado cada vez más competitivo. Una mala
+                    práctica en la logística interna crea problemas en la
+                    movilización de los materiales que suministran la línea de
+                    producción o una mala comunicación que a su vez afecta a
+                    toda la organización. Siendo así, el proceso productivo
+                    inviable al igual que la distribución física.
+                  </p>
+                  <p className="services-paragraph">
+                    Y no es de discutir que en la actualidad, el consumidor
+                    exige entregas a corto plazo. Esto solo existe con una buena
+                    gestión de logística interna. Sin la aplicación correcta de
+                    la logística interna, el desarrollo de las estrategias de la
+                    empresa y su crecimiento en el mercado están en peligro.
+                  </p>
+                </div>
               </div>
+              <h3
+                id={`${link(services[1].items[2])}__subtitle`}
+                className="services-consultoria__title"
+              >
+                ¿Dónde veo los beneficios?
+              </h3>
+              <div className="services-logistica__content_paragraph">
+                <p className="services-paragraph">
+                  Esto puedo variar dependiendo de organización, pero en
+                  beneficios generales podemos encontrar:
+                </p>
+                <ul className="services__ul">
+                  <li className="services__item consultoria-items-2">
+                    Distribución adecuada y ágil de materiales.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Reducción de existencias innecesarias en el Stock.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Mayor productividad de tu personal.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Optimización de la cadena de suministros.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Reducción de costes.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Mejor utilización del espacio de tu organización.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Agilidad en los procesos internos.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Atención más eficaz y satisfactoria al cliente.
+                  </li>
+                  <li className="services__item consultoria-items-2">
+                    Automatización de procesos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h3
+              id={`${link(services[1].items[3])}__subtitle`}
+              className="services-consultoria__title"
+            >
+              ¿Cuándo necesito una logística interna?
+            </h3>
+            <div className="services-logistica__content_paragraph">
+              <p className="services-paragraph">
+                La cantidad del personal es importante, pero no indispensable,
+                una Pyme también necesita una organización y logística adaptada
+                a sus necesidades claramente entre mayor sea tu crecimiento la
+                logística interna ira variando.
+              </p>
+              <h4 className="services-logistica__frase">
+                !El mejor momento fue ayer para mañana será muy tarde, pero
+                puedes empezar hoy!
+              </h4>
             </div>
 
             <div className="services-content__services" id="services-landing">

@@ -22,7 +22,10 @@ h6 {
     font-weight: $regular-title;
 }
 
-p,a{
+p,
+a,
+ul,
+li {
     font-family: $main-font;
     font-weight: $font-regular;
 }

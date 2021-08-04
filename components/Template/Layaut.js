@@ -1,7 +1,9 @@
 //Next
 import Head from "next/head";
+import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+
 //Animation
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
@@ -9,6 +11,12 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Layaut({ children }) {
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
+  const btn = (e) => {
+    e.preventDefault();
+    document
+      .getElementById("main")
+      .scrollIntoView({ block: "start", behavior: "smooth" });
+  };
   useEffect(() => {
     const element = ref.current;
     gsap.fromTo(
@@ -27,16 +35,21 @@ export default function Layaut({ children }) {
         },
       }
     );
-    // gsap.to(element.querySelector("#titleServices"), {
-    //   y: 0,
-    //   duration: 2,
-    //   opacity: 1,
-    //   ease: "bounce",
-    //   delay: 0,
-    //   scrollTrigger: {
-    //     trigger: element.querySelector("#titleServices"),
-    //   },
-    // });
+    window.addEventListener("scroll", function () {
+      let a = document.getElementById("main");
+      let p = a.getBoundingClientRect().top;
+      if (p < -400) {
+        gsap.to("#btn-up", {
+          scale: 1,
+          duration: 1,
+        });
+      }
+      if (p > -400) {
+        gsap.to("#btn-up", {
+          scale: 0,
+        });
+      }
+    });
   }, []);
   useEffect(() => {
     const element = ref.current;
@@ -56,16 +69,6 @@ export default function Layaut({ children }) {
         },
       }
     );
-    // gsap.to(element.querySelector("#titleAbout"), {
-    //   y: 0,
-    //   duration: 2,
-    //   opacity: 1,
-    //   ease: "bounce",
-    //   delay: 0,
-    //   scrollTrigger: {
-    //     trigger: element.querySelector("#titleAbout"),
-    //   },
-    // });
   }, []);
 
   return (
@@ -79,7 +82,18 @@ export default function Layaut({ children }) {
         />
       </Head>
       <Navbar />
-      <main className="main" ref={ref}>
+      <main id="main" className="main" ref={ref}>
+        <Link href="#">
+          <a
+            id={"btn-up"}
+            className="btn-up"
+            onClick={(e) => {
+              btn(e);
+            }}
+          >
+            <i className="fas fa-arrow-circle-up"></i>
+          </a>
+        </Link>
         {children}
       </main>
       <Footer />

@@ -12,11 +12,11 @@
     {
         "id":5,
         "name":"Contáctame",
-        "link":"#contactame"
+        "link":"/#contactame"
     },
     {
         "id":6,
         "name":"¿Quién soy?",
-        "link":"#quien-soy"
+        "link":"/#quien-soy"
     }
 ]

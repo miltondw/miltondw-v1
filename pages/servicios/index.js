@@ -584,22 +584,6 @@ export default function Servicios() {
                 puedes empezar hoy!
               </h4>
             </div>
-
-            <div className="services-content__services" id="services-landing">
-              <h2 className="Title">Creación de sitio Web</h2>
-            </div>
-
-            <div className="services-content__services" id="services-app">
-              <h2 className="Title">Aplicaciones Web</h2>
-            </div>
-
-            <div className="services-content__services" id="services-shop">
-              <h2 className="Title">Desarrollo de Tienda Online</h2>
-            </div>
-
-            <div className="services-content__services" id="services-marketing">
-              <h2 className="Title">Marketing Digital</h2>
-            </div>
           </div>
         </div>
       </div>

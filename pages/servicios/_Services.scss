@@ -1,0 +1,234 @@
+.services {
+    display: grid;
+    overflow-x: hidden;
+
+
+    .Title {
+        transform: translateY(-200%);
+        text-align: center;
+    }
+
+    &-content {
+        max-width: 350px;
+        margin: auto;
+
+        @include tablet {
+            max-width: 600px;
+        }
+
+        @include laptop {
+            max-width: 850px;
+        }
+
+        &__nav {
+            transform: translateX(-100%);
+            opacity: 0;
+
+            .services-nav {
+                display: grid;
+                margin: 1em;
+                background: #0721461c;
+                padding: .6em;
+                box-shadow: -1px -1px 6px 0px;
+                width: 85%;
+                margin: auto;
+
+                @include tablet {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @include laptop {
+                    box-shadow: none;
+                    background: transparent;
+                    padding: 2em;
+                }
+
+                &__item {
+                    padding: .6em;
+                    display: grid;
+                    grid-template-columns: 10% 80% 10%;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+
+                    @include laptop {
+
+                        &:hover>i,
+                        &:hover .services-nav__link {
+                            color: $secondary-color;
+                            cursor: pointer;
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+                &__link {
+                    border-bottom: 1px solid;
+                    padding: .1em;
+                    color: $primary-color;
+
+                    @include laptop {
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &-paragraph {
+            max-width: 340px;
+            margin: auto;
+            padding: 1em;
+            transform: translateY(200%);
+
+            @include tablet {
+                max-width: 600px;
+            }
+
+            @include laptop {
+                max-width: 850px;
+            }
+        }
+
+        &__services {
+            display: grid;
+        }
+    }
+
+    &-paragraph {
+        padding: 0 0.5em;
+    }
+
+    &__ul {
+        list-style: unset;
+        padding: 1em;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__item {
+        padding: .5em;
+        padding-left: 0;
+
+        @include laptop {
+            margin: 1em;
+        }
+    }
+
+    &-consultoria {
+
+        display: grid;
+        max-width: 330px;
+        margin: auto;
+        padding-top: 2.5em;
+
+        @include tablet {
+            max-width: 600px;
+        }
+
+        @include laptop {
+            max-width: 850px;
+        }
+
+        @include laptop {
+            &__paragraph {
+                padding: 1em;
+            }
+        }
+
+
+        &__title {
+            text-align: center;
+            color: $primary-color;
+            font-weight: bold;
+        }
+
+        &__sub-title {
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: .5em;
+        }
+
+        .Title {
+            font-size: 1.5em;
+        }
+    }
+
+    &-frase {
+        text-align: center;
+        font-size: 1.5em;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &-logistica {
+        display: grid;
+
+        .logistica {
+            display: grid;
+        }
+
+        .Title {
+            text-align: center;
+        }
+
+        &__frase {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    &-image {
+
+        transform: translateX(30em);
+
+        @include tablet {
+            width: 50%;
+            float: right;
+            padding: 1em;
+        }
+
+        @include laptop {
+            width: 31%;
+        }
+    }
+
+    .subNavbar {
+        grid-column: 1/-1;
+
+        &__items {
+            padding: .5em;
+            a:hover{
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+
+        &--active {
+            display: block;
+        }
+
+        &--false {
+            display: none;
+        }
+    }
+
+    .arrow--active {
+        transform: rotate(180deg);
+        transition: 1s;
+    }
+
+    .arrow--false {
+        transform: rotate(0);
+        transition: 1s;
+    }
+}

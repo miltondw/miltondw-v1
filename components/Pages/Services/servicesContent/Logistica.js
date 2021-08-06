@@ -1,4 +1,5 @@
 import { link } from "../../../../hooks/link";
+import Image from "next/image";
 
 export default function Logistica({ services }) {
   return (
@@ -27,6 +28,15 @@ export default function Logistica({ services }) {
             className="services-logistica__content_paragraph"
             id={`${link(services[1].items[0])}__paragraph`}
           >
+            <div className="services-image__web">
+              <Image
+                layout="responsive"
+                src={"/img/services/logistic/logistica.jpg"}
+                alt={"¿Qué es la logística interna?"}
+                width={60}
+                height={50}
+              />
+            </div>
             <p className="services-paragraph">
               Es el área de operaciones de apoyo que ocurren dentro de una
               empresa. Se pueden presenciar diversos procesos, como almacenaje,

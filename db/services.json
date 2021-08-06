@@ -32,7 +32,10 @@
         "title": "Creación de sitio Web",
         "description": "La creación de un sitio web no solo te dará credibilidad, sino que también ayudará a mostrar tus soluciones al mercado.",
         "icon": "laptop",
-        "items": [],
+        "items": [
+            "¿Por qué necesitas una página web?",
+            "¿Cómo creamos tu sitio web?"
+        ],
         "id": 3
     },
     {
@@ -41,7 +44,9 @@
         "title": "Aplicaciones Web",
         "description": "Crea la mejor web App  que se adapte a tu empresa, basada en la nube con las mejores herramientas del mercado.",
         "icon": "mobile",
-        "items": [],
+        "items": [
+            "¿Cuáles son los beneficios de una aplicación web?"
+        ],
         "id": 4
     },
     {
@@ -50,7 +55,10 @@
         "title": "Desarrollo de Tienda Online",
         "description": "Ya tus clientes están en la red. Dile adiós a las limitaciones geográficas y físicas ",
         "icon": "cash-register",
-        "items": [],
+        "items": [
+            "¿Cuáles son los beneficios de crear una tienda online?",
+            "¿Cómo creamos tu Tienda Online?"
+        ],
         "id": 5
     },
     {
@@ -59,7 +67,14 @@
         "title": "Marketing Digital",
         "description": "Permíteme que los clientes descubran tu empresa y tus servicios a través de un contenido útil e informativo.",
         "icon": "funnel-dollar",
-        "items": [],
+        "items": [
+            "¿Por qué es importante tener un buen marketing?",
+            "Estrategia de mercadeo",
+            "Marketing de contenidos",
+            "¿Cómo lo hacemos?",
+            "Marketing social Media ",
+            "SEO y SEM"
+        ],
         "id": 6
     }
 ]

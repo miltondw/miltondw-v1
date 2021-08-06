@@ -8,9 +8,13 @@ import ServicesNavbar from "../../components/Pages/Services/servicesContent/Serv
 import Inicio from "../../components/Pages/Services/servicesContent/Inicio";
 import Consultoria from "../../components/Pages/Services/servicesContent/Consultoria";
 import Logistica from "../../components/Pages/Services/servicesContent/Logistica";
+import Web from "../../components/Pages/Services/servicesContent/Web";
+import AppWeb from "../../components/Pages/Services/servicesContent/AppWeb";
 //Hooks
 import { useRef, useEffect } from "react";
 import { link } from "../../hooks/link";
+import Shop from "../../components/Pages/Services/servicesContent/Shop";
+import Marketing from "../../components/Pages/Services/servicesContent/Marketing";
 export default function Servicios() {
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
@@ -48,41 +52,43 @@ export default function Servicios() {
         },
       }
     );
-    for (let i = 0; i <= services[1].items.length - 1; i++) {
-      gsap.fromTo(
-        element.querySelectorAll(`#${link(services[1].items[i])}__subtitle`),
-        {
-          opacity: 0,
-          y: "200%",
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 2,
-          scrollTrigger: {
-            trigger: element.querySelector(
-              `#${link(services[1].items[i])}__content`
-            ),
+    for (let j = 1; j <= 5; j++) {
+      for (let i = 0; i <= services[j].items.length - 1; i++) {
+        gsap.fromTo(
+          element.querySelectorAll(`#${link(services[j].items[i])}__subtitle`),
+          {
+            opacity: 0,
+            y: "200%",
           },
-        }
-      );
-      gsap.fromTo(
-        element.querySelectorAll(`#${link(services[1].items[i])}__paragraph`),
-        {
-          opacity: 0,
-          scale: 0,
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 2,
-          scrollTrigger: {
-            trigger: element.querySelector(
-              `#${link(services[1].items[i])}__content`
-            ),
+          {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            scrollTrigger: {
+              trigger: element.querySelector(
+                `#${link(services[j].items[i])}__content`
+              ),
+            },
+          }
+        );
+        gsap.fromTo(
+          element.querySelectorAll(`#${link(services[j].items[i])}__paragraph`),
+          {
+            opacity: 0,
+            scale: 0,
           },
-        }
-      );
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 2,
+            scrollTrigger: {
+              trigger: element.querySelector(
+                `#${link(services[j].items[i])}__content`
+              ),
+            },
+          }
+        );
+      }
     }
     for (let i = 2; i <= services; i++) {
       gsap.fromTo(
@@ -196,6 +202,10 @@ export default function Servicios() {
             <Inicio />
             <Consultoria services={services} />
             <Logistica services={services} />
+            <Web services={services} />
+            <AppWeb services={services} />
+            <Shop services={services} />
+            <Marketing services={services} />
           </div>
         </div>
       </div>

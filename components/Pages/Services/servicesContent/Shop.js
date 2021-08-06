@@ -32,8 +32,8 @@ export default function Shop({ services }) {
             <div className="services-image__web">
               <Image
                 layout="responsive"
-                src={"/img/services/app-web/codigo.jpg"}
-                alt={"codigo web"}
+                src={"/img/services/shop/online-shop-card.jpg"}
+                alt={"laptop con carrito de compras"}
                 width={60}
                 height={50}
               />
@@ -98,6 +98,15 @@ export default function Shop({ services }) {
               <p className="services-paragraph">
                 Te presentamos los Procesos a aplicar
               </p>
+              <div className="services-image__web">
+                <Image
+                  layout="responsive"
+                  src={"/img/services/shop/online-shop-carrito.jpg"}
+                  alt={"persona con tarjeta de credito"}
+                  width={60}
+                  height={50}
+                />
+              </div>
               <p className="services-paragraph">
                 Una explicación técnica de las Herramientas implementadas
               </p>

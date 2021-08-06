@@ -33,8 +33,8 @@ export default function Marketing({ services }) {
             <div className="services-image__web">
               <Image
                 layout="responsive"
-                src={"/img/services/app-web/codigo.jpg"}
-                alt={"codigo web"}
+                src={"/img/services/marketing/data.jpg"}
+                alt={"tabla con datos de marketing"}
                 width={60}
                 height={50}
               />
@@ -121,6 +121,15 @@ export default function Marketing({ services }) {
               className="services-logistica__content_paragraph"
               id={`${link(services[5].items[1])}__paragraph`}
             >
+              <div className="services-image__web">
+                <Image
+                  layout="responsive"
+                  src={"/img/services/marketing/reunion.jpg"}
+                  alt={"tabla con datos de marketing"}
+                  width={60}
+                  height={50}
+                />
+              </div>
               <p className="services-paragraph">
                 El contenido de valor es un factor crucial que diferencia entre
                 una buena marca y una excelente. La creación de contenido que
@@ -155,7 +164,11 @@ export default function Marketing({ services }) {
               className="services-logistica__content_paragraph"
               id={`${link(services[5].items[1])}__paragraph`}
             >
-              <p className="services-paragraph">una labia bacana</p>
+              <p className="services-paragraph">
+                Analizamos las áreas donde este tu audiencia y creamos contenido
+                para ellos las más comunes y en donde puede estar tu audiencia
+                son:
+              </p>
               <h4 className="services-paragraph">Video</h4>
               <p className="services-paragraph">
                 Aquí entramos en una narración de tu marca, su usabilidad y la
@@ -200,6 +213,15 @@ export default function Marketing({ services }) {
               className="services-logistica__content_paragraph"
               id={`${link(services[5].items[1])}__paragraph`}
             >
+            <div className="services-image__web">
+                <Image
+                  layout="responsive"
+                  src={"/img/services/marketing/social-media.jpg"}
+                  alt={"tabla con datos de marketing"}
+                  width={60}
+                  height={50}
+                />
+              </div>
               <p className="services-paragraph">
                 Aumentar las ventas e impulsar el tráfico del sitio web. Esto
                 implica publicar contenido excelente en sus perfiles de redes
@@ -251,6 +273,15 @@ export default function Marketing({ services }) {
               <h4 className="services-paragraph">
                 ¿Qué es el SEO y por qué es importante?
               </h4>
+              <div className="services-image__web">
+                <Image
+                  layout="responsive"
+                  src={"/img/services/marketing/seo.jpg"}
+                  alt={"tabla con datos de marketing"}
+                  width={60}
+                  height={50}
+                />
+              </div>
               <p className="services-paragraph">
                 El SEO o (optimización en motores de búsqueda) te ayuda a tener
                 mejores relaciones con tu audiencia, mejorar la experiencia del

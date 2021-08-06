@@ -1,0 +1,26 @@
+.creditos {
+    display: grid;
+
+    h2 {
+        text-align: center;
+    }
+
+    &-content {
+        padding: 1em;
+        display: grid;
+
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        a {
+            text-decoration: underline;
+            color: $primary-color;
+            margin: 0 .5em;
+        }
+
+        &__links {
+            margin: .5em;
+        }
+    }
+}

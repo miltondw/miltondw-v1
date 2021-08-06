@@ -31,7 +31,7 @@ export default function About() {
             creación de software que se adaptan a sus necesidades
           </p>
         </div>
-        <Btn title="Conóceme Más" link="/conoceme" />
+        {/* <Btn title="Conóceme Más" link="/conoceme" /> */}
       </div>
     </div>
   );

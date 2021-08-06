@@ -47,7 +47,8 @@ a {
     z-index: 10;
     font-size: 1.5em;
     transform: scale(0);
-    @include laptop{
+
+    @include laptop {
         font-size: 1.8em;
         bottom: 3em;
     }
@@ -63,4 +64,16 @@ a {
 
 .facebook-pixel {
     display: none !important;
+}
+
+//404
+.error404 {
+    display: grid;
+    height: 80vh;
+    background-image: url("/img/services/consulting/search-consulting.jpg");
+    background-size: contain;
+}
+
+.error404__title {
+    display: grid;
 }

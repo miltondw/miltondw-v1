@@ -5,10 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <meta
-            name="description"
-            content="milton estrada desarrollador web y analista freelancer"
-          />
           <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"

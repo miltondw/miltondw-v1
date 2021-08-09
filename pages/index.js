@@ -9,6 +9,10 @@ export default function App() {
     <Layaut>
       <Head>
         <title>Desarrollo Web</title>
+        <meta
+          name="description"
+          content="milton estrada desarrollador web y analista freelancer"
+        />
       </Head>
       <Home />
       <Services />

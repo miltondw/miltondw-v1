@@ -13,6 +13,7 @@ import AppWeb from "../../components/Pages/Services/servicesContent/AppWeb";
 //Hooks
 import { useRef, useEffect } from "react";
 import { link } from "../../hooks/link";
+import Head from "next/head";
 import Shop from "../../components/Pages/Services/servicesContent/Shop";
 import Marketing from "../../components/Pages/Services/servicesContent/Marketing";
 export default function Servicios() {
@@ -194,6 +195,13 @@ export default function Servicios() {
   }, []);
   return (
     <Layaut>
+      <Head>
+        <title>Servicios</title>
+        <meta
+          name="description"
+          content="En miltondw te ofrecemos los servicios que tu empresa necesita para revolucionar a la industrias 4.0 y aquí te apollamos en todo tu camino"
+        />
+      </Head>
       <div className="services" ref={ref}>
         <h1 className="Title">Servicios</h1>
         <div className="services-content">

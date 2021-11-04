@@ -20,7 +20,7 @@
                 color: $primary-color;
             }
             & a:hover{
-                color: $text-color-link
+                color: inherit;
             }
             &:last-child {
                 display: grid;

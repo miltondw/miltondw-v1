@@ -1,5 +1,5 @@
 .footer {
-     background: #eee;
+     background: $background-color-dark;
      margin-top: 2em;
 
      &-content {
@@ -9,6 +9,7 @@
           grid-template-columns: 70% 20%;
           max-width: 340px;
           margin: auto;
+          color: $text-color;
 
           @include tablet {
                max-width: 600px;
@@ -25,7 +26,7 @@
           align-items: end;
           justify-items: center;
           font-size: 35px;
-          color: #2c74cd;
+          color: $dark-color-light;
 
           & a:hover {
                color: $primary-color;

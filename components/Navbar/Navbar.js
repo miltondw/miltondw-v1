@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Items from "../../db/items-menu.json";
 import { useRouter } from "next/router";
+import Image from "next/image";
 export default function Navbar() {
   const router = useRouter();
   const [nav, setNav] = useState(false);
@@ -19,7 +20,15 @@ export default function Navbar() {
         <div className="menu">
           <h1 className="logo">
             <Link href="/">
-              <a title="Inicio">MiltonDw</a>
+              <a title="Inicio" className="logo__link">
+                <Image
+                  layout="responsive"
+                  src={"/img/logo.png"}
+                  alt={"miltondw"}
+                  width={200}
+                  height={150}
+                />
+              </a>
             </Link>
           </h1>
           <div onClick={() => setNav(!nav)} className="toggle-menu">

@@ -77,7 +77,7 @@ export default function Marketing({ services }) {
                 ayudar a las organizaciones en todo, desde la gestión de
                 clientes hasta la retención y experiencia de los clientes.
               </p>
-              <h4 className="services-paragraph">
+              <h4 className="services-paragraph__subtitle">
                 ¿Cómo creamos la estrategia de mercadeo?
               </h4>
               <p className="services-paragraph">
@@ -136,7 +136,7 @@ export default function Marketing({ services }) {
                 puede atraer y generar clientes potenciales y de calidad es
                 extremadamente importante para llegar a tu público.
               </p>
-              <h4 className="services-paragraph">Servicios de contenido</h4>
+              <h4 className="services-paragraph__subtitle">Servicios de contenido</h4>
               <p className="services-paragraph">
                 Recuerda que tu marca no consume contenido en un solo canal y tú
                 tienes que estar presente para cuando tengan la necesidad de tu
@@ -169,7 +169,7 @@ export default function Marketing({ services }) {
                 para ellos las más comunes y en donde puede estar tu audiencia
                 son:
               </p>
-              <h4 className="services-paragraph">Video</h4>
+              <h4 className="services-paragraph__subtitle">Video</h4>
               <p className="services-paragraph">
                 Aquí entramos en una narración de tu marca, su usabilidad y la
                 transmisión de valores de tu marca atreves del video eso no es
@@ -177,14 +177,14 @@ export default function Marketing({ services }) {
                 el cliente. El contenido de video sigue siendo la forma más
                 impactante de llegar a cualquier audiencia.
               </p>
-              <h4 className="services-paragraph">Redes Sociales</h4>
+              <h4 className="services-paragraph__subtitle">Redes Sociales</h4>
               <p className="services-paragraph">
                 Las redes sociales es donde hacemos que pase la comunicación de
                 tu marca. Es el factor que hace crecer el seguimiento de una
                 marca y permite que tu marca se conecte con los consumidores
                 teniendo respuestas rápidas y comunicación directa con tu marca.
               </p>
-              <h4 className="services-paragraph">Redacción</h4>
+              <h4 className="services-paragraph__subtitle">Redacción</h4>
               <p className="services-paragraph">
                 La redacción creativa y clara da vida y voz a la marca. Buscamos
                 dar pautas a la Marca, se define las aspiraciones de las marcas
@@ -228,7 +228,7 @@ export default function Marketing({ services }) {
                 sociales, escuchar e involucrar a sus seguidores, analizar sus
                 resultados y publicar anuncios de valor
               </p>
-              <h4 className="services-paragraph">¿Cómo lo hacemos?</h4>
+              <h4 className="services-paragraph__subtitle">¿Cómo lo hacemos?</h4>
               <p className="services-paragraph">
                 Atreves de los datos que vallamos recaudando de tus clientes y
                 seguidores crearemos un plan de contenido que se adapte a tu
@@ -270,7 +270,7 @@ export default function Marketing({ services }) {
               className="services-logistica__content_paragraph"
               id={`${link(services[5].items[1])}__paragraph`}
             >
-              <h4 className="services-paragraph">
+              <h4 className="services-paragraph__subtitle">
                 ¿Qué es el SEO y por qué es importante?
               </h4>
               <div className="services-image__web">
@@ -291,7 +291,7 @@ export default function Marketing({ services }) {
                 que significa más ventas, clientes más leales y más crecimiento
                 para tu negocio
               </p>
-              <h4 className="services-paragraph">
+              <h4 className="services-paragraph__subtitle">
                 ¿Como competir entre tantas búsquedas?
               </h4>
               <p className="services-paragraph">

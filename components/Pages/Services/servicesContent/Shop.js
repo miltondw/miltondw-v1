@@ -110,12 +110,12 @@ export default function Shop({ services }) {
               <p className="services-paragraph">
                 Una explicación técnica de las Herramientas implementadas
               </p>
-              <h3 className="services-paragraph">Te pediremos:</h3>
+              <h4 className="services-paragraph__subtitle">Te pediremos:</h4>
               <p className="services-paragraph">
                 Tu Brif para mayor conocimiento de tu empresa
               </p>
               <p className="services-paragraph">Logos</p>
-              <h4 className="services-paragraph">
+              <h4 className="services-paragraph__subtitle">
                 De tus productos te pediremos
               </h4>
               <p className="services-paragraph">■ Fotografía</p>
@@ -134,7 +134,7 @@ export default function Shop({ services }) {
                 Durante la creación de tu tienda online Trabajaremos con Trello
                 una herramienta para llevar el seguimiento de tu proyecto
               </p>
-              <h5 className="services-paragraph">
+              <h5 className="services-paragraph__subtitle">
                 Antes y después del lanzamiento de la tienda online, ofrecemos
                 soporte para:
               </h5>

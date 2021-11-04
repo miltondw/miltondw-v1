@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home-title">
-        <h1 className="home-title__name">Milton Estrada</h1>
+        <h1 className="home-title__name">Estrada Milton</h1>
         <h2 className="home-title__subtitle" id="rightRef" ref={rightRef}>
           {texto}
           <span className="home-title__barra">|</span>

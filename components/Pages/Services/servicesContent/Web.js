@@ -73,7 +73,7 @@ export default function Web({ services }) {
               Analizamos tus necesidades y tu público objetivo tomando en cuenta
               las metas que té has planteado conseguir con tu sitio web.
             </p>
-            <h3 className="services-paragraph">Te pediremos:</h3>
+            <h4 className="services-paragraph__subtitle">Te pediremos:</h4>
             <p className="services-paragraph">
               Distribución adecuada y ágil de materiales.
             </p>

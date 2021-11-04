@@ -1,5 +1,5 @@
 .card-services {
-    background: #fafafa;
+    background: $dark-color;
     max-width: 250px;
     margin: auto;
     border: 1px solid #ccc;
@@ -9,8 +9,10 @@
     border-radius: 10px;
     cursor: pointer;
     transform: scale(0);
-
-
+    & > div {
+        width: 34%;
+        left: 30%;
+    }
     @include tablet {
         max-width: 200px;
         position: relative;
@@ -23,15 +25,21 @@
             transform: scale(1.01);
         }
     }
-
     @include laptop {
         max-width: 260px;
 
     }
-
     &__title,
     &__description {
         text-align: center;
+        color: $gray-color;
+    }
+    &__title {
+        color: $terciary-color;
+        font-weight: 600;
+    }
+    &__image{
+        height: 5em;
     }
 }
 
@@ -46,7 +54,8 @@
             grid-column: 1/-1;
         }
     }
-    @include laptop{
+
+    @include laptop {
         max-width: 1000px;
         margin: auto;
     }

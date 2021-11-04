@@ -16,9 +16,11 @@
                 margin: 1em;
             }
         }
-        @include laptop{
+
+        @include laptop {
             max-width: 900px;
         }
+
         &__text {
             text-align: center;
 
@@ -31,7 +33,7 @@
         }
 
         &__paragraph {
-
+            color: $gray-color;
             padding: .5em;
             border-left: 2px solid #ccc;
         }

@@ -102,6 +102,16 @@ export default function Creditos() {
           <div className="creditos-content__links">
             <p> Foto de fauxels en Pexels</p>
           </div>
+          <div className="creditos-content__links">
+            Imagen de{" "}
+            <a href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=63527">
+              Gerd Altmann
+            </a>{" "}
+            en{" "}
+            <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=63527">
+              Pixabay
+            </a>
+          </div>
         </div>
       </div>
     </Layaut>

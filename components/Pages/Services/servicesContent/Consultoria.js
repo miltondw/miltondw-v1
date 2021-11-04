@@ -135,7 +135,7 @@ export default function Consultoria({ services }) {
           </p>
 
           <h4 className="services-consultoria__sub-title sub_2 consultoria-items-3">
-            PASO 3: EVALUACIONES
+            PASO 2: EVALUACIONES
           </h4>
           <p className="sub-2 services-consultoria__paragraph consultoria-items-3">
             Después recopilar los datos en nuestro análisis primario de

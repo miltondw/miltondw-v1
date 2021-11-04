@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Btn from "../../Btn/Btn";
 export default function About() {
   return (
     <div className="about" id="quien-soy">

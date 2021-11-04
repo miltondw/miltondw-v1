@@ -1,16 +1,16 @@
 .Btn {
 
-    border: none;
     display: flex;
     align-items: center;
-    background: transparent;
+    padding: .4em;
+    border-radius: 7px;
+    background: $primary-color;
 
     &__link {
         display: flex;
         align-items: center;
-        color: inherit;
-        font-weight: bold;
-
+        color: $text-color;
+        font-weight: 500;
         border-bottom: 2px solid;
         border-width: 50%;
         margin-left: .3em;

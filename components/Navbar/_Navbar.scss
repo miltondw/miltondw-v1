@@ -1,10 +1,10 @@
 .header {
     width: 100%;
-    height: 2.5em;
+    height: 3.5em;
 
     @include laptop {
-        height: 3em;
-        background: $text-color;
+        height: 3.5em;
+        background: $background-color-dark;
 
         &-content {
             height: inherit;
@@ -19,19 +19,21 @@
         z-index: 200;
         width: 100%;
         align-self: flex-end;
-        background: $text-color;
+        background: $background-color-dark;
         top: 0;
-        height: 2.5em;
+        height: 3.5em;
 
         @include laptop {
-            height: 3em;
+            height: 3.5em;
             left: 0;
         }
 
         .logo {
             font-size: 18px;
             display: inline;
-            width: fit-content;
+            width: 22%;
+            position: relative;
+            top: -7px;
             margin-left: .6em;
             text-shadow: -2px 3px 4px;
 
@@ -45,10 +47,10 @@
 }
 
 .navbar {
-    background: #ffff;
+    background: $background-color-dark;
     position: fixed;
     width: 100%;
-    height: 2.5em;
+    height: 3.5em;
     top: 0;
     box-shadow: -2px 3px 17px 4px;
     z-index: 100;
@@ -60,9 +62,7 @@
         z-index: 200;
         box-shadow: none;
         background: transparent;
-
-        height: 3em;
-
+        height: 3.5em;
     }
 
     &-content {
@@ -99,6 +99,7 @@
             display: flex;
             justify-content: space-evenly;
             padding: 0.5em;
+            margin: 0.5em;
             border-bottom: 1px outset;
             width: 80%;
 
@@ -110,14 +111,14 @@
         }
 
         &__link {
-            color: #010101;
-
+            color: $background-color;
+            font-size: 20px;
             &:hover {
                 color: $secondary-color;
             }
 
             &.active {
-                color: $secondary-color;
+                color: $primary-color;
             }
         }
     }

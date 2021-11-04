@@ -38,9 +38,10 @@ a {
     color: inherit;
 }
 
-.main{
+.main {
     background: $background-color-dark;
 }
+
 .btn-up {
     position: fixed;
     bottom: 5em;
@@ -48,7 +49,7 @@ a {
     z-index: 10;
     font-size: 1.5em;
     transform: scale(0);
-
+    color: $background-color;
     @include laptop {
         font-size: 1.8em;
         bottom: 3em;

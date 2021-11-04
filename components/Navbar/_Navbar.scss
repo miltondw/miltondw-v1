@@ -40,6 +40,8 @@
             @include laptop {
                 position: relative;
                 left: 5%;
+                width: 6%;
+                top: -9px;
             }
 
         }
@@ -57,12 +59,12 @@
 
     @include laptop {
         position: fixed;
-        top: 0;
+        top: 1em;
         max-width: 850px;
         z-index: 200;
         box-shadow: none;
         background: transparent;
-        height: 3.5em;
+        height: 2.5em;
     }
 
     &-content {
@@ -80,7 +82,7 @@
         z-index: 100;
 
         @include laptop {
-            width: 50%;
+            width: 70%;
             flex-direction: row;
             right: 0;
             padding: 0;
@@ -114,7 +116,7 @@
             color: $background-color;
             font-size: 20px;
             &:hover {
-                color: $secondary-color;
+                color: $primary-color
             }
 
             &.active {

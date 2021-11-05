@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           ></link>
 
-          {/* Facebook Pixel Code  */}
+          {/* Facebook Pixel Code 
           <script
             dangerouslySetInnerHTML={{
               __html: ` !function(f,b,e,v,n,t,s)
@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
               fbq('init', '403484481197846');
               fbq('track', 'PageView');`,
             }}
-          />
+          /> */}
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

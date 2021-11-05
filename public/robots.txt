@@ -1,3 +1,2 @@
-user-agent:*
-disallow:/creditos
-disallow:/404
+User-agent: *
+Disallow: /creditos

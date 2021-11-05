@@ -1,10 +1,10 @@
 import CardServices from "./CardServices";
 import services from "../../../db/services.json";
-import Particles from "react-tsparticles";
 //Animation
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Particles from "react-tsparticles";
 export default function Services() {
   const cardService = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
@@ -94,7 +94,7 @@ export default function Services() {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 3,
+              speed: 10,
               straight: false,
             },
             number: {

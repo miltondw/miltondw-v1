@@ -23,7 +23,7 @@ export default function Navbar() {
               <a title="Inicio" className="logo__link">
                 <Image
                   layout="responsive"
-                  src={"/img/logo-2.png"}
+                  src={"/img/logo.png"}
                   alt={"miltondw"}
                   width={60}
                   height={60}

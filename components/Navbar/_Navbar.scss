@@ -37,14 +37,14 @@
             margin-left: .6em;
             text-shadow: -2px 3px 4px;
             @include tablet{
-                width: 11%; 
+                width: 7%; 
             }
 
             @include laptop {
                 position: relative;
                 left: 5%;
-                width: 6%;
-                top: -9px;
+                width: 4%;
+                top: -6px;
             }
 
         }

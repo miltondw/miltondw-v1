@@ -11,8 +11,9 @@ export default function App() {
         <title>Desarrollo Web</title>
         <meta
           name="description"
-          content="milton estrada desarrollador web y analista freelancer"
+          content="milton estrada consultor tecnologico y desarrollador web como analista freelancer"
         />
+        <meta name="theme-color" content="#010101" />
       </Head>
       <Home />
       <Services />
